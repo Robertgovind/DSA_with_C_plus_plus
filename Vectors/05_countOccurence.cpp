@@ -8,11 +8,12 @@ int main(){
     for(int i=0;i<5;i++){
         int element;
         cin>>element;
-        v[i]=element;
+        v.push_back(element);
     }
     int occurenceCount=0,x;
     cout<<"Enter element : ";
     cin>>x;
+
     for(int i=0;i<v.size();i++){
         if(v[i]==x){
             occurenceCount++;
