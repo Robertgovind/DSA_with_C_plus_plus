@@ -12,5 +12,5 @@ int main(){
             sum-=arr[i];
         }
     }
-    cout<<"The difference of element at even and odd positions is :"<<sum<<endl;
+    cout<<"The difference of elements at even and odd positions is :"<<sum<<endl;
 }

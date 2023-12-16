@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/govin/Desktop/DSA_with_C_plus_plus/Vectors",
-      "program": "c:/Users/govin/Desktop/DSA_with_C_plus_plus/Vectors/build/Debug/outDebug",
+      "cwd": "c:/Users/govin/Desktop/DSA_with_C_plus_plus/arrays",
+      "program": "c:/Users/govin/Desktop/DSA_with_C_plus_plus/arrays/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
