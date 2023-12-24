@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/govin/Desktop/DSA_with_C_plus_plus/BinarySearch",
-      "program": "c:/Users/govin/Desktop/DSA_with_C_plus_plus/BinarySearch/build/Debug/outDebug",
+      "cwd": "c:/Users/govin/Desktop/DSA_with_C_plus_plus/sortingAlgorithms",
+      "program": "c:/Users/govin/Desktop/DSA_with_C_plus_plus/sortingAlgorithms/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
