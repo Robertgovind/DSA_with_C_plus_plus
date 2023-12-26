@@ -12,6 +12,8 @@ int main(){
         cout<<"Size : "<<vct.size()<<endl;
         cout<<"Capacity : "<<vct.capacity()<<endl;
     }
-    
+    cout<<vct[1]<<endl;
+    vct.erase(vct.begin()+1);
+    cout<<vct[1]<<endl;
     return 0;
 }
