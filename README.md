@@ -12,3 +12,13 @@
 - 9.Power of two
 
 # 4.Vector
+
+# 5.Binary Search
+
+# 6.Strings
+- 1.Introductions
+- 2.Finding the length of a character array
+- 3.Reverse a given string
+- 4.Check if palindrome normal case
+- 5.Check if palindrome special case:ignore non alphanumeric characters
+
