@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/govin/OneDrive/Desktop/DSA_with_C_plus_plus/sortingAlgorithms",
-      "program": "c:/Users/govin/OneDrive/Desktop/DSA_with_C_plus_plus/sortingAlgorithms/build/Debug/outDebug",
+      "cwd": "c:/Users/govin/OneDrive/Desktop/DSA_with_C_plus_plus/06_Strings",
+      "program": "c:/Users/govin/OneDrive/Desktop/DSA_with_C_plus_plus/06_Strings/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

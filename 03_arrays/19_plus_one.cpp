@@ -24,11 +24,17 @@ using namespace std;
      vector<int> plusOne1(vector<int>& digits) {
         vector<int> temp;
         int tempDigit=digits[digits.size()-1]+1;
+        int index=1;
         while(tempDigit!=0){
             temp.push_back(tempDigit%10);
+            index++;
             tempDigit/=10;
+            if(digits[digits.size()-index]+tempDigit>=10){
+                tempDigit+=digits[digits.size()-index];
+            }
+            
         }
-        for(int i=digits.size()-2;i>=0;i--){
+        for(int i=digits.size()-index;i>=0;i--){
             temp.push_back(digits[i]);
         }
         reverse(temp.begin(),temp.end());
@@ -37,10 +43,10 @@ using namespace std;
 
 int main(){
     vector<int> arr;
-    arr.push_back(1);
-    arr.push_back(2);
-    arr.push_back(3);
-    vector<int> ans=plusOne(arr);
+    arr.push_back(9);
+    arr.push_back(9);
+
+    vector<int> ans=plusOne1(arr);
     for(int i:ans)
     cout<<i;
     return 0;
