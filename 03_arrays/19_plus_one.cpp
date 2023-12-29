@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
+#include<string>
 using namespace std;
 
 
@@ -22,23 +23,21 @@ using namespace std;
     }
     //Error in case of 99
      vector<int> plusOne1(vector<int>& digits) {
-        vector<int> temp;
-        int tempDigit=digits[digits.size()-1]+1;
-        int index=1;
-        while(tempDigit!=0){
-            temp.push_back(tempDigit%10);
-            index++;
-            tempDigit/=10;
-            if(digits[digits.size()-index]+tempDigit>=10){
-                tempDigit+=digits[digits.size()-index];
+         int temp,i=digits.size()-1;
+        vector<int> v;
+        do{
+            temp=digits[i]+1;
+            v.push_back((temp%10));
+            temp/=10;
+            if(temp==0){
+                break;
             }
-            
+            temp+=digits[i];
+        }while(temp!=0);
+        while(i>=0){
+            v.push_back(digits[i--]);
         }
-        for(int i=digits.size()-index;i>=0;i--){
-            temp.push_back(digits[i]);
-        }
-        reverse(temp.begin(),temp.end());
-        return temp;
+        reverse(v.begin(),v.end());
     }
 
 int main(){
@@ -46,8 +45,9 @@ int main(){
     arr.push_back(9);
     arr.push_back(9);
 
-    vector<int> ans=plusOne1(arr);
-    for(int i:ans)
+    
+    //vector<int> ans=plusOne1(arr);
+    for(int i:arr)
     cout<<i;
     return 0;
 }
