@@ -40,14 +40,32 @@ using namespace std;
         reverse(v.begin(),v.end());
     }
 
+    //Optimized and correct code
+    vector<int> plusOne2(vector<int>& digits){
+        for(int i=digits.size()-1;i>=-0;i--){
+            digits[i]++;
+            if(digits[i]==10){
+                digits[i]=0;
+            }
+            else{
+                break;
+            }
+        }
+        if(digits[0]==0)
+        digits.insert(digits.begin(),1);
+
+        return digits;
+    }
+
 int main(){
+    allocator<int> act;
     vector<int> arr;
     arr.push_back(9);
     arr.push_back(9);
 
     
-    //vector<int> ans=plusOne1(arr);
-    for(int i:arr)
+    vector<int> ans=plusOne2(arr);
+    for(int i:ans)
     cout<<i;
     return 0;
 }
