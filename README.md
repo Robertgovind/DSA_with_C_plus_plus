@@ -22,3 +22,4 @@
 - 4.Check if palindrome normal case
 - 5.Check if palindrome special case:ignore non alphanumeric characters
 
+# 7.Matrix(2D Arrays)
