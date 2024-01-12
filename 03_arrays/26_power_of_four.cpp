@@ -14,7 +14,7 @@ bool checkPowerOfFour(int n){
 }
 
 int main(){
-    cout<<checkPowerOfFour(256);
+    cout<<checkPowerOfFour(0);
     
     return 0;
 }
