@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/govin/OneDrive/Desktop/DSA_with_C_plus_plus/07_2D_arrays",
-      "program": "c:/Users/govin/OneDrive/Desktop/DSA_with_C_plus_plus/07_2D_arrays/build/Debug/outDebug",
+      "cwd": "c:/Users/govin/OneDrive/Desktop/DSA_with_C_plus_plus",
+      "program": "c:/Users/govin/OneDrive/Desktop/DSA_with_C_plus_plus/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
