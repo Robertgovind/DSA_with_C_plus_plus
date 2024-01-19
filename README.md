@@ -37,6 +37,7 @@
 - 27.Container with most water
 - 28.House Robber
 - 29.Daily temperature
+- 30.Sort colors(Sort 0's, 1's and 2's)
 
 # 4.Vector
 - 1.Intro
@@ -64,6 +65,59 @@
 - 2.Finding the length of a character array
 - 3.Reverse a given string
 - 4.Check if palindrome normal case
-- 5.Check if palindrome special case:ignore non alphanumeric characters
+- 5.Check if palindrome special case:ignore non    alphanumeric characters
+- 6.Suffle string
+- 7.Keyboard row
+- 8.Minimum index sum
+-9.Roman to integer
 
 # 7.Matrix(2D Arrays)
+- 1.Introduction
+- 2.Searching
+- 3.Row wise sum
+- 4.Row with max sum
+- 5.Print like wave
+- 6.Spiral matrix
+- 7.Search in 2D matrix
+- 8.Search in 2D matrix II
+- 9.Spiral matrix II
+- 10.Set matrix zeroes
+- 11.Reshape matrix
+- 12.Toepliz matrix
+- 13.Rotate image
+
+
+# 8.Basic math for DSA
+- 1.Prime numbers
+- 2.Prime numbers II
+- 3.GCD AND LCM
+- 4.Modular
+
+# 9.Pointers
+- 1.Introduction
+
+# 10.Recursion
+- 1.Fatorial
+- 2.Power of two
+- 3.Counting ascending and descending
+- 4.Check if sorted or not
+- 5.Sum of elements of an array
+- 6.Linear search
+- 7.Binary search
+- 8.Reverse string
+- 9.palindrome
+- 10.Power of a to b
+- 11.Bubble sort
+- 12.Merge sort
+- 13.Inversion count problem
+- 14.Quick sort
+- 15.Subset
+- 16.subsequences
+- 17.Letter combination
+- 18.Permutation
+
+# 11.Backtracking
+-1.Rat in a maze problem
+
+# 12.OOPs
+- 1.Introduction
