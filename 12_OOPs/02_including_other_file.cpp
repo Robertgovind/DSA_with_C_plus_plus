@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     Student st;
-    st.name="Govind Kumat Yadav";
+    st.name="Govind Kumar Yadav";
     st.age=22;
     st.printData();
     return 0;
