@@ -5,7 +5,7 @@ int getPivot(int arr[],int size){
     int start=0,end=size-1;
     int mid=start+(end-start)/2;
     while(start<end){
-        if(arr[mid]>arr[0]){
+        if(arr[mid]>=arr[0]){
             start=mid+1;
         }
         else{
@@ -36,17 +36,14 @@ int binarySearch(int arr[],int s,int e,int key){
 int searchIndex(int arr[],int size,int key){
     int pivot=getPivot(arr,size);
     if(arr[pivot]<=key&&arr[size-1]>=key){
-        cout<<"second line"<<endl;
         return binarySearch(arr,pivot,size-1,key);
-        
     }
     else{
-        cout<<"first line " <<endl;
         return binarySearch(arr,0,pivot-1,key);
     }
 }
 int main(){
-    int arr[8]={8,9,10,12,3,5,6,7};
-    cout<<"The index of key is :"<<searchIndex(arr,8,10);
+    int arr[8]={1,0,1,1,1};
+    cout<<"The index of key is :"<<searchIndex(arr,5,0);
     return 0;
 }
