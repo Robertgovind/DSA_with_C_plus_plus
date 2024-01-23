@@ -121,3 +121,6 @@
 
 # 12.OOPs
 - 1.Introduction
+
+# 13.Linked List
+- 1.Singly linked list : insert at head ,tail, position & delete from head, tail, position
