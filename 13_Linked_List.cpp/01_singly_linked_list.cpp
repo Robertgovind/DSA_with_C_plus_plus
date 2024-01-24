@@ -10,8 +10,17 @@ class Node{
         this->data = data;
         this->next = NULL;
     }
-};
 
+    ~Node(){
+        int val = this->data;
+        if(this->next != NULL){
+            delete next;
+            this->next = NULL;
+        }
+        cout<<"Deleted :"<<data<<endl;
+    }
+};
+//INSERTION IN LINKED LIST
 void insertAtHead(Node* &head,int data){
     Node* NewNode = new Node(data);
 
@@ -44,7 +53,34 @@ void insertAtPos(Node* &head,Node* &tail, int pos,int data){
     newNode->next = temp->next;
     temp->next = newNode;
 }
+//DELETION IN LINKED LIST
+void deleteNode(int pos, Node* &head){
+    if(pos == 1){
+        Node* temp = head;
+        head = head->next;
+        temp = NULL;
+        delete temp;
+    }
+    else{
+        Node* prev;
+        Node* current = head;
+        int count = 1;
+        while(count<pos){
+            if(current->next == NULL){
+                cout<<"Position not found!!"<<endl;
+                return ;
+            }
+            prev=current;
+            current=current->next;
+            count++;
+        }
+        prev->next = current->next;
+        current->next = NULL;
+        delete current;
 
+    }
+}
+//TRAVERSAL IN LINKED LIST
 void print(Node* head){
     Node* temp = head;
     while(temp != NULL){
@@ -69,6 +105,9 @@ int main(){
     print(head);
 
     insertAtPos(head,tail,4,20);
+    print(head);
+
+    deleteNode(6,head);
     print(head);
 
     cout<<"head "<<head->data<<endl;
