@@ -1,45 +1,45 @@
  #include<iostream>
  #include<bits/stdc++.h>
  using namespace std;
- 
-int setBits(int n){
-    int count=0;
-    while(n != 0){
-        if(n&1)
-        count++;
+vector<vector<int>> threeSum(vector<int>& nums) {
+    sort(nums.begin(),nums.end());
+    vector<vector<int>> result;
+     for (int i = 0; i < nums.size(); ++i) {
+        if (i > 0 && nums[i] == nums[i - 1])
+            continue;
 
-        n>>=1;
-    }
-    return count;
-}
-bool isSorted(vector<int> &nums){
-    int n=nums.size();
-    for(int i=0;i<n-1;i++){
-        for(int j=i+1;j<n;j++){
-            if(nums[i]>nums[j]){
-                return false;
+        int low = i + 1, high = nums.size() - 1;
+
+        while (low < high) {
+            int sum = nums[i] + nums[low] + nums[high];
+            if (sum == 0) {
+                result.push_back({nums[i], nums[low], nums[high]});
+                while (low < high && nums[low] == nums[low + 1]) 
+                    low++;
+                while (low < high && nums[high] == nums[high - 1])
+                    high--;
+                low++;
+                high--;
+            } else if (sum < 0) {
+                low++;
+            } else {
+                high--;
             }
         }
     }
-    return true;
-}
 
-bool canSortArray(vector<int>& nums) {
-    int n=nums.size();
-    for(int i=0;i<n-1;i++){
-        for(int j=i+1;j<n;j++){
-            if(setBits(nums[i])==setBits(nums[j])){
-                if(nums[i]>nums[j]){
-                    swap(nums[i],nums[j]);
-                }
-            }
-        }
+    return result;
     }
-    return isSorted(nums);
-}
+
 
  int main(){
-    vector<int> nums={8,4,2,30,15};
-    cout<<canSortArray(nums)<<endl;
+    vector<int> nums={-1,0,1,2,-1,-4};
+    vector<vector<int>> ans=threeSum(nums);
+    for(auto i: ans){
+        for(int j:i){
+            cout<<j<< " ";
+        }
+        cout<<endl;
+    }
     return 0;
  }

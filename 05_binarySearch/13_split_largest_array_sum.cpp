@@ -20,14 +20,14 @@ int splitArray(vector<int>& nums, int k) {
             else{
                 sum+=i;
             }
-            if(pieces>k){
+        }
+         if(pieces>k){
                 start=mid+1;
             }
             else{
                 end=mid;
             }
             mid=start+(end-start)/2;
-        }
     }
     return end;
 }
