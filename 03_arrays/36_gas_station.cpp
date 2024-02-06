@@ -36,8 +36,8 @@ int Sum(vector<int> array){
     }
     return sum;
 }
-int canCompleteCircuit(vector<int>& gas, vector<int>& cost){
-    if(Sum(gas)<Sum(gas))
+int canCompleteCircuit1(vector<int>& gas, vector<int>& cost){
+    if(Sum(gas)<Sum(cost))
     return -1;
     vector<int> data;
     for(int i=0;i<gas.size();i++){

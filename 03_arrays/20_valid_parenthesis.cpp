@@ -1,22 +1,27 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 bool validParenthesis(string str){
-    int ans=0;
-    for(int i=0;i<str.size();i++){
-        if(str[i]==')')
-        str[i]=')';
-        else if(str[i]=='{')
-        str[i]='}';
-        else if(str[i]=='[')
-        str[i]=']';
+   stack<char> st;
+   for(int i=0;i<str.length();i++){
+    if(str[i] == '(')
+    st.push(')');
+    else if(str[i] == '{')
+    st.push('}');
+    else if(str[i] == '[')
+    st.push(']');
+    else{
+        if(st.empty() || str[i] != st.top())
+        return false;
 
-        ans=ans^str[i];
+        st.pop();
     }
-    if(ans==0)
-    return true;
-    else
-    return false;
+   }
+   if(!st.empty())
+   return false;
+   
+   return true;
 }
 
 int main(){
