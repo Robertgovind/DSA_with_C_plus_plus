@@ -23,3 +23,23 @@ bool detectCycle(Node* head){
     }
     return false;
 }
+//FLOYD'S CYCLE DETECTION ALGORITHM
+ bool detectLOOP(Node* head){
+    if(head == NULL){
+        return false;
+    }
+    Node* slow = head;
+    Node* fast = head;
+
+    while(slow != NULL && fast != NULL){
+        fast = fast->next;
+        if(fast != NULL){
+            fast = fast->next;
+        }
+        slow = slow -> next;
+        if(slow == fast){
+            return true;
+        }
+    }
+    return false;
+ }
