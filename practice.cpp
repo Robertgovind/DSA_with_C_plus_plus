@@ -4,8 +4,8 @@
 vector<vector<int>> threeSum(vector<int>& nums) {
     sort(nums.begin(),nums.end());
     vector<vector<int>> result;
-     for (int i = 0; i < nums.size(); ++i) {
-        if (i > 0 && nums[i] == nums[i - 1])
+     for (int i = 0; i < nums.size(); i++) {
+        if (i > 0 && nums[i] == nums[i - 1])//for unique triplets
             continue;
 
         int low = i + 1, high = nums.size() - 1;
@@ -31,15 +31,24 @@ vector<vector<int>> threeSum(vector<int>& nums) {
     return result;
     }
 
-
  int main(){
-    vector<int> nums={-1,0,1,2,-1,-4};
-    vector<vector<int>> ans=threeSum(nums);
-    for(auto i: ans){
-        for(int j:i){
-            cout<<j<< " ";
-        }
-        cout<<endl;
-    }
+     string str = "govind";
+    // cout<<str<<endl;
+    // str.append("a");
+    // cout<<str<<endl;
+    // str.insert(3,"and");
+    // cout<<str<<endl;
+    // string a = "abc",b = "def";
+    // int s = str.find("and");
+    // string temp = str.substr(s,3);
+    // cout<<temp<<endl;
+    // char arr[10]= "govind";
+    // strrev(arr);
+    // cout<<arr<<endl;
+    str = "santosh";
+    cout<<str<<endl;
+    //reverse();
+    cout<<str.find("n")<<endl;
+    cout<<str<<endl;
     return 0;
  }
