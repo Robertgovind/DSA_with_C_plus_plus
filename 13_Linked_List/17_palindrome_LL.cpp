@@ -76,5 +76,5 @@ bool isPal(Node* head){
         temp = temp->next;
     }
 
-    return check(temp);
+    return check(test);
 }
