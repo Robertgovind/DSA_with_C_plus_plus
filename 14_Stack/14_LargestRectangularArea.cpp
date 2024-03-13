@@ -14,7 +14,7 @@ vector<int> nextSmaller(vector<int> arr, int n){
             s.pop();
         }
         ans[i] = s.top();
-        s.push(curr);
+        s.push(i);
     }
     return ans;
 }
@@ -30,7 +30,7 @@ vector<int> prevSmaller(vector<int> arr, int n){
             s.pop();
         }
         ans[i] = s.top();
-        s.push(curr);
+        s.push(i);
     }
     return ans;
 }
@@ -49,7 +49,7 @@ int LargestRectangularArea(vector<int> &heights){
         if(next[i] == -1){
             next[i] = n;
         }
-        int b = next[i]=prev[i]-1;
+        int b = next[i]-prev[i]-1;
         int newArea=l*b;
         area = max(area,newArea);
     }
