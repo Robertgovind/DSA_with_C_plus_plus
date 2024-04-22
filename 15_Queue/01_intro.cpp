@@ -12,6 +12,5 @@ int main(){
     cout<<"Queue front :" << q.front()<<endl;
     q.pop();
     cout<<"Updated queue size :"<< q.size()<< endl;
-    
     return 0;
 }

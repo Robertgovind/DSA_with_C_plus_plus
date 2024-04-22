@@ -59,5 +59,13 @@ class Queue {
         return rear-front+1;
     }
 
+    bool isEmpty(){
+        if(front == rear){
+            return true;
+        }
+
+        return false;
+    }
+
 
 };
